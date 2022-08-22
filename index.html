@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0"
+		/>
+		<title>Paytm Clone</title>
+		<!----------------Favicon Icon------------>
+		<link rel="shortcut icon" href="/assets/paytm-favicon-icon.svg" type="image/x-icon">
+		<!---------------------Inter Google Font--------------->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<!--------------Font Awesome CDN---------->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!--------------------Tailwindcss----------------->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					screens: {
+						sm: '480px',
+						md: '768px',
+						lg: '976px',
+						xl: '1440px',
+					},
+					extend: {
+						colors: {
+							cultured: '#F5F5F6',
+							ghostwhite: '#F9F9F9',
+							cyanprocess: '#00BAF2',
+							bubbles: '#E8F8FD',
+							yaleblue: '#0F4A8A',
+						},
+						fontFamily: {
+							inter: ['Inter', 'sans-serif'],
+						},
+						backgroundImage: {
+							'hero-img': "url('/assets/mobile/hero-img.svg')",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+<body class="font-inter bg-ghostwhite">
+	<div class="md:hidden">
+		<!-------------Mobile Navbar----------->
+		<nav class="flex bg-[#CFEDFF] items-center justify-between p-[4%]">
+			<div class="flex items-center">
+				<i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+				<a href="index.html"><img class="w-36 ml-8" src="/assets/mobile/paytm-logo.png" alt="" /></a>
+			</div>
+			
+			
+			<div
+				class="bg-cyanprocess hover:bg-yaleblue p-1 rounded-full flex items-center justify-between cursor-pointer min-w-28"
+			>
+				<span class="mx-4 text-white">Log In</span>
+				<img src="/assets/mobile/user.svg" alt="" />
+			</div>
+		</nav>
+
+		<!---------------Mobile Hero Section------------>
+		<section class="relative  w-full -z-10">
+			<div>
+				<img class="min-w-full" src="./assets/mobile/hero-img.svg" alt="" />
+			</div>
+
+			<div class="w-full text-center absolute top-20 sm:top-28 text-xl sm:text-3xl">
+				<h1 class="uppercase font-bold ">Pay or transfer money</h1>
+				<p class="capitalize">Directly from your bank account</p>
+			</div>
+			<div
+				class="w-[92%] grid items-center grid-cols-4 gap-2 bg-gradient-to-t from-cyanprocess to-yaleblue absolute -bottom-8 left-[4%] right-[4%] rounded-lg text-white text-center p-2"
+			>
+				<div >
+					<img
+						class="w-8 mx-auto"
+						src="./assets/mobile/paytm-wallet.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Paytm wallet</h4>
+				</div>
+				<div>
+					<img
+						class="w-8 mx-auto"
+						src="./assets/mobile/upi-money-transfer.png"
+						alt=""
+					/>
+					<h4 class="text-xs">UPI Money Transfer</h4>
+				</div>
+				<div>
+					<img class="w-8 mx-auto" src="./assets/mobile/bank.png" alt="" />
+					<h4 class="text-xs">Bank</h4>
+				</div>
+				<div>
+					<img class="w-8 mx-auto" src="./assets/mobile/passbook.png" alt="" />
+					<h4 class="text-xs">Passbook</h4>
+				</div>
+			</div>
+		</section>
+		<!------------Recharge & Bill Payments------------>
+		<section class="px-[4%] mt-16 font-bold">
+			<h2>Recharge & Bill Payments</h2>
+			<div class="w-full grid items-center grid-cols-4 gap-2 text-center my-4">
+				<div >
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/mobile-prepaid.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Mobile Prepaid</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/electricity.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Electricity</h4>
+				</div>
+				<div>
+					<img class="w-10 mx-auto" src="./assets/mobile/dth.png" alt="" />
+					<h4 class="text-xs">DTH</h4>
+				</div>
+				<div>
+					<img class="w-10 mx-auto" src="./assets/mobile/view-all.png" alt="" />
+					<h4 class="text-xs">View All</h4>
+				</div>
+			</div>
+		</section>
+		<hr class="m-[4%]" />
+		<!------------Play and Wind------------->
+		<section class="px-[4%] font-bold">
+			<h2>Play & Win</h2>
+			<div class="w-full grid items-center grid-cols-4 gap-2 text-center my-4">
+				<div>
+					<img class="w-10 mx-auto" src="./assets/mobile/rummy.png" alt="" />
+					<h4 class="text-xs">Rummy</h4>
+				</div>
+				<div>
+					<img class="w-10 mx-auto" src="./assets/mobile/poker.png" alt="" />
+					<h4 class="text-xs">Poker</h4>
+				</div>
+				<div>
+					<img class="w-10 mx-auto" src="./assets/mobile/win-lakh.png" alt="" />
+					<h4 class="text-xs">Win ₹10 Lakh</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/win-crore.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Win ₹1.5 Crore</h4>
+				</div>
+			</div>
+		</section>
+		<hr class="m-[4%]" />
+		<!------------Tickets------------->
+		<section class="px-[4%] font-bold">
+			<h2>Tickets</h2>
+			<div class="w-full grid items-center grid-cols-4 gap-2 text-center my-4">
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/movie-tickets.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Movie Tickets</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/train-tickets.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Train Tickets</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/flight-tickets.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Flight Tickets</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/bus-tickets.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Bus Tickets</h4>
+				</div>
+			</div>
+			<div class="w-36 py-2 px-4 mx-auto my-6 text-xs text-center  text-cyanprocess border-[1px] rounded-full">
+				All Services <i class="fa-solid fa-angle-down"></i>
+			</d>
+		</section>
+		<!----------------Download Paytm app---------------->
+		<section class="px-[4%] my-8">
+			<h2 class="font-bold my-8">Download Paytm app</h2>
+			<div class="text-xs flex items-center my-6">
+				<div >
+					<img class="w-12 " src="/assets/mobile/scan-any-qr.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">Scan any QR</h3>
+					<p >Make payments at nearby shops</p>
+				</div>
+			</div>
+
+			<div class="text-xs flex items-center my-6">
+				<div >
+					<img class="w-12 " src="/assets/mobile/app-only-offer.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">App only offers</h3>
+					<p >View your personalized offers, scratchcards and points</p>
+				</div>
+			</div>
+
+			<div class="text-xs flex items-center my-6">
+				<div>
+					<img class="w-20 " src="/assets/mobile/safe-and-secure.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">Safe and Secure</h3>
+					<p >At paytm your trust is foremost, your money is yours untill you get what you paid for</p>
+				</div>
+			</div>
+
+			<div class="text-xs flex items-center my-6">
+				<div >
+					<img class="w-12 " src="/assets/mobile/faster-and-smoother.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">Faster and Smoother</h3>
+					<p >Make the most of the enriched in-app experience</p>
+				</div>
+			</div>
+			<button class="w-full p-4 rounded-lg bg-cyanprocess text-white font-semibold text-xs">Download the app now</button>
+		</section>
+		<!-----------------Also on Paytm-------------->
+		<section class="px-[4%] font-bold">
+			<h2>Also on Paytm</h2>
+			<div class="w-full grid items-center grid-cols-4 gap-2 text-center my-4">
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/train.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Train</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/buy-digital-gold.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Buy Digital Gold</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/cricket.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Cricket</h4>
+				</div>
+				<div>
+					<img
+						class="w-10 mx-auto"
+						src="./assets/mobile/loans.png"
+						alt=""
+					/>
+					<h4 class="text-xs">Loans</h4>
+				</div>
+			</div>
+			<div class="w-36 py-2 px-4 mx-auto my-6 text-xs text-center  text-cyanprocess border-[1px] rounded-full">
+				All Services <i class="fa-solid fa-angle-down"></i>
+			</d>
+		</section>
+		<!--------------------Others----------------->
+		<section class="px-[4%] my-8">
+			<div class="text-xs flex items-center my-6">
+				<div >
+					<img class="w-12 mt-4" src="/assets/mobile/cashback-and-offers.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">Cashback & Offers</h3>
+					<p >View your scratchcards, points & other offers</p>
+				</div>
+			</div>
+
+			<div class="text-xs flex items-center my-6">
+				<div >
+					<img class="w-12 " src="/assets/mobile/become-merchant.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">Become a Merchant</h3>
+					<p >Accept payments with Paytm's Paytm Gateway, Payment Links, QR & much more</p>
+				</div>
+			</div>
+
+			<div class="text-xs flex items-center my-6">
+				<div>
+					<img class="w-12 " src="/assets/mobile/customer-care.png" alt="">
+				</div>
+				<div class="ml-6">
+					<h3 class="font-bold">24×7 Customer care</h3>
+					<p >Get quick resolution on queries related to </p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-----------------Footer--------------->
+  <footer class="mb-16">
+	<!--------------Social Links-->
+	<div class="mx-[4%] text-center text-gray-500 py-8 border-b">
+		<a href=""><i class="mx-4 text-2xl fa-brands fa-twitter"></i></a>
+		<a href=""><i class="mx-4 text-2xl fa-brands fa-instagram"></i></a>
+  <a href=""><i class="mx-4 text-2xl fa-brands fa-facebook-f"></i></a>
+	</div>
+<!------------------Details----------------->
+<div class="mx-[4%]">
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">More about Paytm</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Company</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Investor Relations</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Career</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Recharge & pay bills</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Pay Loan EMI, Insurance Premiums & Education Fee</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Book Travel & Entertainment</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Investments & Miscellaneous</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Insurance (Powered by Paytm Insurance Broking Private Limited)</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Loans and Credit Cards</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+
+	<div class="flex items-center justify-between py-4 cursor-pointer border-b">
+		<div class="w-[90%]">
+			<h3 class="font-bold text-xs">Financial Tools & Calculators</h3>
+		</div>
+		<i class="fa-solid fa-plus"></i>
+	</div>
+</div>
+
+<!-----------------Copy Rights------------->
+<div class="px-[4%] font-semibold text-xs  py-6 text-center text-gray-500">
+		<p >
+			Copyright&#169; 2022 Paytm All rights reserved 
+		</p> 
+		<p>Clone by - 
+			<a class="text-cyanprocess underline" href="https://www.instagram.com/ajayborocoding/">Ajay Boro</a>
+		</p>
+</div>
+
+
+	<!------------Bottom to Top Button--------------->
+<a href="#">
+	<img class="fixed bottom-[20%] right-[4%]" src="./assets/mobile/btm-to-top-btn.svg" alt="">
+</a>
+	<!-----------------Fixed Download link------------>
+	<div class=" w-full fixed bottom-0 left-0 flex justify-between items-center px-[4%] bg-bubbles">
+		<div class="text-xs  flex items-center my-2 ">
+				<div >
+					<img class="w-12 " src="./assets/mobile/6c19b670.svg" alt="">
+				</div>
+				<div class="mx-2 text-xs">
+					<h3 class="font-bold">Download</h3>
+					<p >Live the Paytm Experience</p>
+				</div>
+	  </div>
+	  <div >
+		<button class="bg-cyanprocess w-full text-xs py-2 px-4 rounded-full text-white">Download now</button>
+	  </div>
+	</div>
+</div>
+  </footer>
+	</body>
+</html>
